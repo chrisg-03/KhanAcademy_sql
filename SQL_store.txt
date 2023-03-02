@@ -1,22 +1,23 @@
 CREATE DATABASE sql_practice;
 USE sql_practice;
+
 CREATE TABLE storehub (product_id INTEGER PRIMARY KEY, in_stock INTEGER, item TEXT, price NUMERIC, quantity_sold INTEGER);
 
-INSERT INTO storehub VALUES(1, 30, "Bananas", "1.49", 14);
-INSERT INTO storehub VALUES(2, 13, "Dark Chocolate", "2.55", 8);
-INSERT INTO storehub VALUES(3, 20, "Pesto Sauce", "5.20", 9);
-INSERT INTO storehub VALUES(4, 18, "Apples", "2.49", 15);
-INSERT INTO storehub VALUES(5, 12, "Chicken", "4.99", 12);
-INSERT INTO storehub VALUES(6, 50, "Barilla no.5", "1.49", 23);
-INSERT INTO storehub VALUES(7, 30, "Spinach", "0.99", 19);
-INSERT INTO storehub VALUES(8, 25, "Coffee", "3.49", 20);
-INSERT INTO storehub VALUES(9, 30, "Grapes", "1.49", 16);
-INSERT INTO storehub VALUES(10, 10, "Jasmine Rice", "4.99", 4);
-INSERT INTO storehub VALUES(11, 19, "300g Minced Beef", "3.99", 30);
-INSERT INTO storehub VALUES(12, 30, "Kiwi", "1.49", 14);
-INSERT INTO storehub VALUES(13, 25, "Mixed Spice", "0.99", 10);
-INSERT INTO storehub VALUES(14, 23, "Milk", "2.20", 40);
-INSERT INTO storehub VALUES(15, 18, "Eggs", "2.55", 30);
+INSERT INTO storehub VALUES(1, 30, "Bananas", 1.49, 14);
+INSERT INTO storehub VALUES(2, 13, "Dark Chocolate", 2.55, 8);
+INSERT INTO storehub VALUES(3, 20, "Pesto Sauce", 5.20, 9);
+INSERT INTO storehub VALUES(4, 18, "Apples", 2.49, 15);
+INSERT INTO storehub VALUES(5, 12, "Chicken", 4.99, 12);
+INSERT INTO storehub VALUES(6, 50, "Barilla no.5", 1.49, 23);
+INSERT INTO storehub VALUES(7, 30, "Spinach", 0.99, 19);
+INSERT INTO storehub VALUES(8, 25, "Coffee", 3.49, 20);
+INSERT INTO storehub VALUES(9, 30, "Grapes", 1.49, 16);
+INSERT INTO storehub VALUES(10, 10, "Jasmine Rice", 4.99, 4);
+INSERT INTO storehub VALUES(11, 19, "300g Minced Beef", 3.99, 30);
+INSERT INTO storehub VALUES(12, 30, "Kiwi", 1.49, 14);
+INSERT INTO storehub VALUES(13, 25, "Mixed Spice", 0.99, 10);
+INSERT INTO storehub VALUES(14, 23, "Milk", 2.20, 40);
+INSERT INTO storehub VALUES(15, 18, "Eggs", 2.55, 30);
 
 SELECT item, price, ROUND(price*quantity_sold,2) AS revenue
 FROM storehub
