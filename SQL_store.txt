@@ -1,5 +1,5 @@
-CREATE DATABASE mysql_practice;
-USE mysql_practice;
+CREATE DATABASE sql_practice;
+USE sql_practice;
 CREATE TABLE storehub (product_id INTEGER PRIMARY KEY, in_stock INTEGER, item TEXT, price NUMERIC, quantity_sold INTEGER);
 
 INSERT INTO storehub VALUES(1, 30, "Bananas", "1.49", 14);
